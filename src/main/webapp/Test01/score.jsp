@@ -16,11 +16,11 @@
 </head>
 <body>
 
-	<form action="scoreOk.jsp" name="score">
+	<form action="scoreOk.jsp" name="score" onsubmit="return scoreCheck()">
 		국어 <input type="text" name="kor"><br/>
 		영어 <input type="text" name="eng"><br/>
 		수학 <input type="text" name="math"><br/>
-		<input type="submit" value="평균 출력하기" onclick="scoreCheck()">
+		<input type="submit" value="평균 출력하기">
 		<input type="reset" value="다시 입력하기">
 	</form>
 
