@@ -9,6 +9,8 @@
 <body>
 
 	<%
+		request.setCharacterEncoding("UTF-8"); // 인코딩 설정
+	
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		
@@ -17,12 +19,8 @@
 		} else {
 			out.println("로그인 실패!");
 		}
-
 	%>
-
-
-
-
+	<!-- 로그인 실패 시 로그인 페이지로 돌아가는 하이퍼링크 만들 수도 있음 -->
 
 </body>
 </html>
